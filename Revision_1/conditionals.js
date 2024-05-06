@@ -66,5 +66,17 @@ console.log(digits);
 
 let num2 = 12345
 
+let result = 0
+
+while(num2 > 0){
+    result = result * 10 + num2%10
+
+    num2 = Math.floor(num2/10)
+}
+
+console.log(result);
+
+
+
 
 
