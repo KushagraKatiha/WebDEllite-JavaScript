@@ -49,3 +49,6 @@ for(let i = n; i >= 1; i--){
 //     let space = " ";
 //     console.log(str.repeat(n-i) + str.repeat(i));
 // }
+
+
+// 
