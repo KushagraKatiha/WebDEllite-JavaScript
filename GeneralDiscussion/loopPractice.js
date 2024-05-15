@@ -23,8 +23,8 @@
 // Assignment 1: How to handle big numbers in JS
 // Assignment 2: Do the same question, the other way (do not change number into string !!)
 
-let num = 88899999934343499111111111111 // 2
-
+let num = "8888888888888888888888888888888888888"
+console.log(num.length);
 let noOfLoops = 0;
 
 let numStr = String(num)
@@ -32,17 +32,8 @@ let numStr = String(num)
 let strLen = numStr.length
 
 for(let i = 0; i < strLen; i++){
-    if(numStr[i] == '0'){
-        noOfLoops++
-    }else if(numStr[i] == '4'){
-        noOfLoops++
-    }else if(numStr[i] == '6'){
-        noOfLoops++
-    }else if(numStr[i] == '8'){
-        noOfLoops += 2
-    }else if(numStr[i] == '9'){
-        noOfLoops++
-    }
+    if(numStr[i] == '0' || numStr[i] == '4' || numStr[i] == '6' || numStr[i] == '9') noOfLoops++
+    if(numStr[i] == '8') noOfLoops += 2
 }
 
 console.log(`Total number of loops: ${noOfLoops}`);
