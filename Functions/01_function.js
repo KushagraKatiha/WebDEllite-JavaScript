@@ -165,14 +165,43 @@ console.log(myDetails.fullName())
 // }
 // no change
 
-function func(){
+function func(){                    // Function
     console.log(this);
 }
 
 func()
 
-let arrFunc = () => {
+let arrFunc = () => {             // Function Expression
     console.log(this);
 }
 
 arrFunc()
+
+
+let a = 5;
+let b = 6;
+
+function add(num1, num2){
+    let result = num1 + num2;
+    return result
+}
+
+function sub(num1, num2){
+    let result = num1 -num2;
+    return result
+}
+
+function output(a, b){
+    let addtion = add(a, b)
+    let subtraction = sub(a, b)
+
+    let mainResult = addtion - subtraction;
+
+    return mainResult
+}
+
+let ans = output(a, b)          // 12
+let ans2 = output(7, 8)        // 16
+
+console.log(ans);
+console.log(ans2);

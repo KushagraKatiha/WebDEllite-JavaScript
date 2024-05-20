@@ -12,7 +12,7 @@
 
 // let num2 = num1
 
-// num1.push(2)
+// num1 = [2, 3, 4]
 
 
 // console.log(num1);  
